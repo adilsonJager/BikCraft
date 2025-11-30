@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Bikcraft</title>
-  </head>
-  <body>
-    <header>
-      <img class="logo" src="./img/bikcraft.svg" alt="logo bikcraft" />
-    
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Bikcraft</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./img/bikcraft.svg" alt="logo bikcraft" />
+
 
     <nav aria-label="menus">
       <ul>
@@ -19,22 +21,21 @@
         <li><a href="/">CONTACT</a></li>
       </ul>
     </nav>
-</header>
-    <main>
-      <div class="introduction">
-        
-        <h1>Handmade bicycles</h1>
+  </header>
+  <main>
+    <article class="container-introduction">
+      <div class="introduction" aria-labelledby="label-introduction">
+        <h1 id="label-introduction">Handmade bicycles</h1>
         <p>
           The Nimbus Stark is the best Bikcraft ever created by our team. It
           comes equipped with the best accessories from the brand.
         </p>
         <a class="shop" href="/">SHOP NOW</a>
       </div>
-
       <img class="bike" src="./img/bicicleta.jpg" alt="" />
-
-      <h2 class="subtitle">advantages Bikcraft</h2>
-
+    </article>
+    <article class="container-introduction" aria-labelledby="label-advantages">
+      <h2 class="subtitle" id="label-advantages">advantages Bikcraft</h2>
       <div class="advantages">
         <div class="advantages-item">
           <img src="./img/eletrica.svg" alt="eletric icon" />
@@ -54,12 +55,14 @@
           <p>Tracker and anti-theft system to guarantee your peace of mind.</p>
         </div>
       </div>
-    </main>
+    </article>
+  </main>
 
-    <footer>
-      <div class="footer">
-        <p>Bikcraft. Some rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="footer">
+      <p>Bikcraft. Some rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>

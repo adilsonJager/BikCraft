@@ -21,8 +21,8 @@ p {
 }
 
 header{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
 }
 
 nav {
@@ -44,17 +44,17 @@ nav {
     text-transform: uppercase;
     display: block;
     font-size: 1rem;
+    border: transparent solid 2px;
   }
 
   a:hover{
     font-weight: 900;
-    padding: 1.1rem 2.1rem;
     transition: 0.5s;
-    border: #e21 solid 1px;
+    border: #e21 solid 2px;
   }
   
 }
-main {
+.container-introduction {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 62.5rem;
@@ -97,6 +97,9 @@ main {
   text-align: right;
   padding: 2.5rem;
   align-self: center;
+
+  background-image: url("./img/onda.svg");
+
 }
 
 .bike {
