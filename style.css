@@ -26,14 +26,12 @@ header{
 }
 
 nav {
-
   ul{
   display: flex;
   flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
   gap: 1.25rem;
   list-style: none;
+  justify-content: center;
   }
 
   a {
@@ -97,14 +95,15 @@ nav {
   text-align: right;
   padding: 2.5rem;
   align-self: center;
-
   background-image: url("./img/onda.svg");
-
+  /* word-break: break-all; */
+  overflow-wrap: break-word;
 }
 
 .bike {
   max-width: 100%;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages {
@@ -135,6 +134,33 @@ footer {
   background: #fff;
   width: 100vw;
   text-align: center;
-  padding: 2.5rem;
+  padding:  1rem 2.5rem;
   box-sizing: border-box;
 }
+
+
+@media (max-width: 824px) {
+  
+  .conteiner-advantages{
+    grid-template-columns: 1fr;
+
+  }
+}
+
+@media (max-width: 483px) {
+
+  .container-introduction {
+    grid-template-columns: 1fr;
+  }
+
+  .introduction::before{
+    display: none;
+  } 
+
+}
+
+/* @media (min-width: 484px) and (max-width: 646px )  {
+  ul{
+    justify-content: center;
+  }
+} */
